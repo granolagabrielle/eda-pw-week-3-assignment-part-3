@@ -43,7 +43,7 @@ console.log('6. Showing supplyChanges...');
 
 for (let x = 0; x < supplyChanges.length; x++) {
     console.log(supplyChanges[x]);
-    if (supplyChanges[x] == 0) {
+    if (supplyChanges[x] === 0) {
         console.log('No change');
     } else if (supplyChanges[x] > 0) {
         console.log(`Added ${supplyChanges[x]} parts`);
@@ -59,7 +59,7 @@ console.log('7. Showing supplyChanges with "for of" loop');
 
 for (let change of supplyChanges) {
     console.log(change);
-    if (change == 0) {
+    if (change === 0) {
         console.log('No change');
     } else if (change > 0) {
         console.log(`Added ${change} parts`);
